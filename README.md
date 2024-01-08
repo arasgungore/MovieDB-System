@@ -93,3 +93,17 @@ deactivate
 ```
 
 When you want to work on the project again, you can reactivate the environment with the activate command used earlier.
+
+
+
+## Authors
+
+👤 **Aras Güngöre**
+
+* LinkedIn: [@arasgungore](https://www.linkedin.com/in/arasgungore)
+* GitHub: [@arasgungore](https://github.com/arasgungore)
+
+👤 **Ali Üçer**
+
+* LinkedIn: [@ucer](https://www.linkedin.com/in/ucer)
+* GitHub: [@aliucer](https://github.com/aliucer)
