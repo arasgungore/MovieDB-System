@@ -1,6 +1,6 @@
 # MovieDB-System
 
-A CMPE 321 project MovieDB database with a user interface (UI).
+Final MySQL project assigned for the Introduction to Database Systems (CMPE 321) course in the Spring 2023 semester. This project aims to develop a database application for a movie ticket booking and rating system. In the first project, we have performed conceptual database design, drew ER diagrams, and converted these ER diagrams into relational tables for MovieDB. In this project, we went one step further and implemented the MovieDB database with a user interface (UI) using the structure we have designed in the first project. The database was built using MySQL and the UI was built using Flask.
 
 
 
