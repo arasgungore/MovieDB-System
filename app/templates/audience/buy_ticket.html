@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buy Ticket</title>
+</head>
+<body>
+    <h1>Buy Ticket</h1>
+    {% if error %}
+    <p>{{ error }}</p>
+    {% endif %}
+    <form action="/audience/buy_ticket" method="POST">
+        <label for="session_id">Session ID:</label>
+        <input type="text" id="session_id" name="session_id" required><br><br>
+        <input type="submit" value="Buy Ticket">
+    </form>
+</body>
+</html>

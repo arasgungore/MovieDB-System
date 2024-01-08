@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Movie</title>
+</head>
+<body>
+    <h1>Add Movie</h1>
+    <form method="POST" action="/director/add_movie">
+        <label for="movie_id">Movie ID:</label>
+        <input type="text" id="movie_id" name="movie_id" required>
+        <br>
+        <label for="movie_name">Movie Name:</label>
+        <input type="text" id="movie_name" name="movie_name" required>
+        <br>
+        <label for="theater_id">Theater ID:</label>
+        <input type="text" id="theater_id" name="theater_id" required>
+        <br>
+        <label for="date">Date:</label>
+        <input type="text" id="date" name="date" required>
+        <br>
+        <label for="time_slot">Time Slot:</label>
+        <input type="text" id="time_slot" name="time_slot" required>
+        <br>
+        <label for="session_id">Session ID:</label>
+        <input type="text" id="session_id" name="session_id" required>
+        <br>
+        <label for="duration">Duration:</label>
+        <input type="text" id="duration" name="duration" required>
+        <br>
+        <button type="submit">Add Movie</button>
+    </form>
+</body>
+</html>

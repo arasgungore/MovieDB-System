@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Directors</title>
+</head>
+<body>
+    <h1>View Directors</h1>
+    <table>
+        <tr>
+            <th>Username</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Nation</th>
+            <th>Platform ID</th>
+        </tr>
+        {% for director in directors %}
+            <tr>
+                <td>{{ director[0] }}</td>
+                <td>{{ director[1] }}</td>
+                <td>{{ director[2] }}</td>
+                <td>{{ director[3] }}</td>
+                <td>{{ director[4] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

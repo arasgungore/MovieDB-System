@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Tickets</title>
+</head>
+<body>
+    <h1>View Tickets</h1>
+    <table>
+        <tr>
+            <th>Movie ID</th>
+            <th>Movie Name</th>
+            <th>Session ID</th>
+            <th>Rating</th>
+            <th>Overall Rating</th>
+        </tr>
+        {% for ticket in tickets %}
+        <tr>
+            <td>{{ ticket[0] }}</td>
+            <td>{{ ticket[1] }}</td>
+            <td>{{ ticket[2] }}</td>
+            <td>{{ ticket[3] }}</td>
+            <td>{{ ticket[4] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

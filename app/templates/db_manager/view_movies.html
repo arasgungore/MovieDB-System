@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Movies</title>
+</head>
+<body>
+    <h1>View Movies</h1>
+    <table>
+        <tr>
+            <th>Movie ID</th>
+            <th>Movie Name</th>
+            <th>Theater ID</th>
+            <th>District</th>
+            <th>Time Slot</th>
+        </tr>
+        {% for movie in movies %}
+            <tr>
+                <td>{{ movie[0] }}</td>
+                <td>{{ movie[1] }}</td>
+                <td>{{ movie[2] }}</td>
+                <td>{{ movie[3] }}</td>
+                <td>{{ movie[4] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    
+    <h2>Search Movies</h2>
+    <form method="post" action="/db_manager/view_movies">
+        <label for="username">Director's Username:</label>
+        <input type="text" id="username" name="username">
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>

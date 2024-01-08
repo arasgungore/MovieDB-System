@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Predecessors</title>
+</head>
+<body>
+    <h1>Add Predecessors</h1>
+    <form method="POST" action="/director/add_predecessors">
+        <label for="movie_id">Movie ID:</label>
+        <input type="text" id="movie_id" name="movie_id" required>
+        <br>
+        <label for="predecessors">Predecessors (comma-separated):</label>
+        <input type="text" id="predecessors" name="predecessors" required>
+        <br>
+        <button type="submit">Add Predecessors</button>
+    </form>
+</body>
+</html>

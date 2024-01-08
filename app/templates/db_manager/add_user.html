@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add User</title>
+</head>
+<body>
+    <h2>Add User</h2>
+    <form method="POST" action="/db_manager/add_user">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname"><br><br>
+        <div class="form-group">
+        <label for="user_type">User Type:</label>
+        <select class="form-control" id="user_type" name="user_type">
+            <option value="audience">Audience</option>
+            <option value="director">Director</option>
+        </select>
+        </div><br><br>
+        <label for="nation">Nation:</label>
+        <input type="text" id="nation" name="nation" required><br><br>
+        <label for="platform_id">Platform ID:</label>
+        <input type="text" id="platform_id" name="platform_id"><br><br>
+        <input type="submit" value="Add User">
+    </form>
+</body>
+</html>

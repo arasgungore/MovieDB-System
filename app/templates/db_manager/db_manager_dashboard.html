@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Dashboard</h1>
+    <h2>Welcome, {{ session['username'] }}!</h2>
+    <h3>Actions:</h3>
+    <ul>
+        <li><a href="/db_manager/add_user">Add User</a></li>
+        <li><a href="/db_manager/delete_audience">Delete Audience</a></li>
+        <li><a href="/db_manager/update_platform">Update Platform ID</a></li>
+        <li><a href="/db_manager/view_directors">View Directors</a></li>
+        <li><a href="/db_manager/view_movies">View Movies</a></li>
+        <li><a href="/db_manager/view_ratings">View Ratings</a></li>
+        <li><a href="/db_manager/view_average_rating">View Average Rating</a></li>
+        <li><a href="/db_manager/logout">Logout</a></li>
+    </ul>
+</body>
+</html>

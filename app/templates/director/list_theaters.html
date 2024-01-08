@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List Theaters</title>
+</head>
+<body>
+    <h1>List Theaters</h1>
+        <table>
+            <tr>
+                <th>Theater ID</th>
+                <th>District</th>
+                <th>Theater Capacity</th>
+            </tr>
+            {% for theater in theaters %}
+                <tr>
+                    <td>{{ theater[0] }}</td>
+                    <td>{{ theater[1] }}</td>
+                    <td>{{ theater[2] }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+
+    <h2>Search Time Slot</h2>
+    <form method="POST" action="/director/list_theaters">
+        <label for="date">Date:</label>
+        <input type="text" id="date" name="date" required>
+        <label for="time_slot">Time Slot:</label>
+        <input type="text" id="time_slot" name="time_slot" required>
+        <button type="submit">List</button>
+    </form>
+</body>
+</html>

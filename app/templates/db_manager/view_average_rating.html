@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Average Rating</title>
+</head>
+<body>
+    <h1>View Average Rating</h1>
+    {% if average_rating %}
+        <table>
+            <tr>
+                <th>Movie ID</th>
+                <th>Movie Name</th>
+                <th>Rating</th>
+            </tr>
+            <tr>
+                <td>{{ average_rating[0] }}</td>
+                <td>{{ average_rating[1] }}</td>
+                <td>{{ average_rating[2] }}</td>
+            </tr>
+        </table>
+    {% else %}
+        <p>No average rating available for the specified movie ID.</p>
+    {% endif %}
+    
+    <h2>Search Movies</h2>
+    <form method="POST" action="/db_manager/view_average_rating">
+        <label for="movie_id">Movie ID:</label>
+        <input type="text" id="movie_id" name="movie_id" required>
+        <button type="submit">View</button>
+    </form>
+</body>
+</html>

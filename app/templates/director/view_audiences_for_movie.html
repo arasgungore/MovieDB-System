@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Audiences for Movie</title>
+</head>
+<body>
+    <h1>View Audiences for Movie</h1>
+    <table>
+        <tr>
+            <th>Username</th>
+            <th>Name</th>
+            <th>Surname</th>
+        </tr>
+        {% for audience in audiences %}
+            <tr>
+                <td>{{ audience[0] }}</td>
+                <td>{{ audience[1] }}</td>
+                <td>{{ audience[2] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    
+    <h2>Search Movies</h2>
+    <form method="POST" action="/director/view_audiences_for_movie">
+        <label for="movie_id">Movie ID:</label>
+        <input type="text" id="movie_id" name="movie_id" required>
+        <button type="submit">View</button>
+    </form>
+</body>
+</html>

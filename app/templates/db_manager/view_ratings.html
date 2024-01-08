@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Ratings</title>
+</head>
+<body>
+    <h1>View Ratings</h1>
+    <table>
+        <tr>
+            <th>Movie ID</th>
+            <th>Movie Name</th>
+            <th>Rating</th>
+        </tr>
+        {% for rating in ratings %}
+            <tr>
+                <td>{{ rating[0] }}</td>
+                <td>{{ rating[1] }}</td>
+                <td>{{ rating[2] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    
+    <h2>Search Ratings</h2>
+    <form method="post" action="/db_manager/view_ratings">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>

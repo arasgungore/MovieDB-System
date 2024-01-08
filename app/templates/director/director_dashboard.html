@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Dashboard</h1>
+    <h2>Welcome, {{ session['username'] }}!</h2>
+    <h3>Actions:</h3>
+    <ul>
+        <li><a href="/director/list_theaters">List Theaters</a></li>
+        <li><a href="/director/add_movie">Add Movie</a></li>
+        <li><a href="/director/add_predecessors">Add Predecessors</a></li>
+        <li><a href="/director/view_director_movies">View Director Movies</a></li>
+        <li><a href="/director/view_audiences_for_movie">View Audiences for Movie</a></li>
+        <li><a href="/director/update_movie_name">Update Movie Name</a></li>
+        <li><a href="/director/logout">Logout</a></li>
+    </ul>
+</body>
+</html>
